@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tasky</title>
+    <link rel="stylesheet" href='{% static "tasky/home.css" %}'>
+    <link rel="stylesheet" href='{% static "tasky/app.css" %}'>
+    {% block styling %}{% endblock styling %}
+</head>
+
+<body class="static-body">
+    <div id="announcement-banner"></div>
+    <div class="alert--container js-alert-container" data-pie-id="59">
+        <div></div>
+    </div>
+    <div class="react-alert--container js-alert-container">
+        <div></div>
+    </div>
+    <div class="smart-banner--container smart-banner-wrap js-smart-banner-container"></div>
+    <div class="sidebar-navigation-overlay" data-behavior="toggle-sidebar-menu"></div>
+    <div class="sidebar-navigation-container">
+        <div class="sidebar-navigation-content">
+            <div class="sidebar-navigation-floater">
+                <button aria-label="Close menu" class="sidebar-close-icon" data-behavior="toggle-sidebar-menu">
+                    <i class="ss-icon ss-lnr-cross2"></i>
+                </button>
+                <div class="sidebar-menu main-menu" data-behavior="sidebar-main-menu">
+                    <div class="sidebar-menu-header"></div>
+                    <div class="sidebar-menu-content" data-behavior="sidebar-scrollable-content">
+                        <ul>
+                            <li>
+                                <button data-behavior="toggle-services-menu">
+                                    Services
+                                    <i class="ss-icon ss-lnr-chevron-right"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="/login?source=header">Sign up / Log in</a>
+                            </li>
+                            <li>
+                                <a data-behavior="last-item-focus" href="/become-a-tasker">Become a Tasker</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar-menu services-menu u-hidden" data-behavior="sidebar-services-menu">
+                    <div class="sidebar-menu-header">
+                        <button data-behavior="toggle-services-menu">
+                            <i class="ss-icon ss-lnr-chevron-left"></i>
+                            Services
+                        </button>
+                    </div>
+                    <div class="sidebar-menu-content" data-behavior="sidebar-scrollable-content">
+                        <div class="popular-tasks-title">
+                            Popular Tasks
+                        </div>
+                        <ul>
+                            <li><a href="/services/handyman/assemble-furniture">Furniture
+                                    Assembly</a></li>
+                            <li><a href="/services/handyman/wall-mount-tv">TV Mounting</a>
+                            </li>
+                            <li><a href="/services/handyman">Handyman</a></li>
+                            <li><a href="/services/yardwork-removal/lawn-care">Lawn Care
+                                    Services</a></li>
+                            <li><a href="/services/moving">Help Moving</a></li>
+                            <li><a href="/services/shopping-delivery/delivery-service">Delivery
+                                    Service</a></li>
+                            <li><a href="/services/shopping-delivery/grocery-shopping">Grocery
+                                    Shopping &amp; Delivery</a></li>
+                            <li><a href="/services/yardwork-removal/">Yard Work</a></li>
+                            <li><a href="/services/handyman/painting">Painting</a></li>
+                            <li><a href="/services/handyman/light-installation">Lighting
+                                    Installation</a></li>
+                            <li><a href="/services/handyman/hang-pictures">Hang Pictures</a>
+                            </li>
+                            <li><a href="/services/online-tasks">Virtual &amp; Online
+                                    Tasks</a></li>
+                            <li><a href="/services/contactless">Contactless Tasks</a></li>
+                            <li><a href="/t/volunteer">Volunteer Help</a></li>
+                            <li><a href="/ikea">IKEA Services</a></li>
+                            <li><a href="/services">All Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout--container js-layout-container">
+        <div class="nav--container nav--mobile-container js-mobile-nav-container is-hidden"></div>
+        <div class="main--container js-main-container">
+            <div>
+                <div class="header__navigation-container header__navigation-container--mobile header-navigation-without-pie u-hidden--lg hidden"
+                    data-behavior="hamburger-menu-content">
+                    <a class="header__navigation-link u-hidden--lg" data-behavior="toggle-hamburger-services-menu">
+                        <i aria-label="Expand" class="u-pull-right ss-lnr-plus-circle nav-services--expand-trigger"></i>
+                        <i aria-label="Collapse"
+                            class="u-pull-right ss-lnr-circle-minus nav-services--expand-trigger u-hidden"></i>
+                        <i class="ss-rkt-home"></i>
+                        <span>Services</span>
+                    </a>
+                    <div class="hamburger-services-section u-hidden--lg" data-behavior="hamburger-services-section">
+                        <div class="nav__services-list--mobile">
+                            <span class="type__section-title header-popover__item">Popular Tasks</span>
+                            <a class="header-popover__item"
+                                href="/services/handyman/assemble-furniture">Furniture
+                                Assembly</a>
+                            <a class="header-popover__item"
+                                href="/services/handyman/wall-mount-tv">TV Mounting</a>
+                            <a class="header-popover__item"
+                                href="/services/handyman">Handyman</a>
+                            <a class="header-popover__item"
+                                href="/services/yardwork-removal/lawn-care">Lawn Care
+                                Services</a>
+                            <a class="header-popover__item" href="/services/moving">Help
+                                Moving</a>
+                            <a class="header-popover__item"
+                                href="/services/shopping-delivery/delivery-service">Delivery
+                                Service</a>
+                            <a class="header-popover__item"
+                                href="/services/shopping-delivery/grocery-shopping">Grocery
+                                Shopping &amp; Delivery</a>
+                            <a class="header-popover__item"
+                                href="/services/yardwork-removal/">Yard Work</a>
+                            <a class="header-popover__item"
+                                href="/services/handyman/painting">Painting</a>
+                            <a class="header-popover__item"
+                                href="/services/handyman/light-installation">Lighting
+                                Installation</a>
+                            <a class="header-popover__item"
+                                href="/services/handyman/hang-pictures">Hang Pictures</a>
+                            <a class="header-popover__item"
+                                href="/services/online-tasks">Virtual &amp; Online Tasks</a>
+                            <a class="header-popover__item"
+                                href="/services/contactless">Contactless Tasks</a>
+                            <a class="header-popover__item" href="/t/volunteer">Volunteer
+                                Help</a>
+                            <a class="header-popover__item" href="/ikea">IKEA Services</a>
+                            <a class="header-popover__item" href="/services">All Services</a>
+                        </div>
+                    </div>
+                    <a class="header__navigation-link" href="/login?source=header">
+                        <i class="ss-lnr-lock"></i>
+                        <span>Sign up / Log in</span>
+                    </a>
+                    <a class="header__navigation-link u-hidden--lg tasker-signup-btn" href="/become-a-tasker">
+                        <i class="ss-rkt-handyman"></i>
+                        <span>Become a Tasker</span>
+                    </a>
+                </div>
+                {% block header %}
+                 {% if request.user.is_authenticated %}
+                  {% include 'base/dashheader.html' %}
+                 {% else %}
+                 {% include 'base/navbar.html' %}
+                 {% endif %}
+                 
+                {% endblock header %}
+            </div>
+            <div class="main--content">
+               {% block content %}{% endblock content %}
+            </div>
+            <div class="footer-container"></div>
+        </div>
+    </div>
+</body>
+
+</html>

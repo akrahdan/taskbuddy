@@ -1,0 +1,8 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block styling %} 
+{% if request.user.is_authenticated %} 
+<link rel="stylesheet" href='{% static "tasky/dashboard.css" %}'>
+{% else %} 
+{% endif %} 
+{% endblock styling %}

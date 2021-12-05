@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styling %}
+  <link rel="stylesheet" href='{% static "tasky/dashboard.css" %}'>
+  <link rel="stylesheet" href='{% static "tasky/accounts.css" %}'>
+{% endblock styling %}
+
+{% block content %}
+<div class="view--body account--view">
+    <div class="container">
+        <h1><span>Your Account</span></h1>
+        <div class="account--container">
+            <div class="row row--thin main-panel">
+                <div class="tr-col-12 tr-col-lg-3 nav-side-bar">
+                    <div class="nav-container js-nav-container">
+                        <div role="navigation" aria-label="Account Menu">
+                            <ul class="side-nav">
+                                <li class="is-selected side-nav--item">
+                                    <a href="/account/profile">
+                                        <span>Profile</span><span class="visually-hidden">&nbsp;<span>current page</span></span>
+                                    </a>
+                                </li>
+                                <li class="side-nav--item">
+                                    <a href="/account/password"><span>Password</span></a>
+                                </li>
+                                <li class="side-nav--item">
+                                    <a href="/account/notifications"><span>Notifications</span></a>
+                                </li>
+                                <li class="side-nav--item">
+                                    <a href="/account/billing-info"><span>Billing Info</span></a>
+                                </li>
+                                <li class="side-nav--item">
+                                    <a href="/account/cancel-a-task"><span>Cancel a Task</span></a>
+                                </li>
+                                <li class="side-nav--item">
+                                    <a href="/account/redemptions"><span>Account Balance</span></a>
+                                </li>
+                                <li class="side-nav--item">
+                                    <a href="/account/transactions"><span>Transactions</span></a>
+                                </li>
+                                <li class="side-nav--item">
+                                    <a href="/account/deactivate"><span>Deactivate</span></a>
+                                </li>
+                            </ul>
+                            <select>
+                                <option value="profile">Profile</option>
+                                <option value="password">Password</option>
+                                <option value="notifications">Notifications</option>
+                                <option value="billing-info">Billing Info</option>
+                                <option value="cancel-a-task">Cancel a Task</option>
+                                <option value="redemptions">Account Balance</option>
+                                <option value="transactions">Transactions</option>
+                                <option value="deactivate">Deactivate</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="tr-col-12 tr-col-lg-9 main-section">
+                    <div class="main-container transition-container js-child-container">
+                        <div>
+                            <div class="account--title-container">
+                                <a class="btn btn-secondary btn-small" href="/account/profile/edit"><span>Edit</span></a>
+                                <h2 class="account--title"><span>Account</span></h2>
+                            </div>
+                            <div class="row row--guttered">
+                                <div class="tr-col-12 tr-col-lg-4 u-align--center">
+                                    <div class="avatar-container-144"><img src='{% static "tasky/images/avatar.png" %}' alt="Name" /></div>
+                                </div>
+                                <div class="tr-col-12 tr-col-lg-8 u-align--center u-align--lg-left">
+                                    <ul class="account--list">
+                                        <li><i class="ss-user"></i><span>Your name</span></li>
+                                        <li><i class="ss-envelope"></i><span>{{user.email}}</span></li>
+                                        <div class="intended_use_info"></div>
+                                        <form  method="post" action="{% url 'account_logout' %}">
+                                            {% csrf_token %}
+                                            <li>
+                                                <button class="btn btn-small"><span>Log Out</span></button>
+                                            </li>
+                                        </form>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

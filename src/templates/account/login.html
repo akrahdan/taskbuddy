@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styling %}
+<link rel="stylesheet" href='{% static "tasky/auth.css" %}'>
+{% endblock styling %}
+{% block header %}{% endblock header %}
+
+{% block content %}
+<div id="root">
+    <div class="sc-bdvvtL jOmzDU background js-background"></div>
+    <div class="panel panel--spaced login-signup-no-social-content">
+        <img class="sc-gsDKAQ bpxSsy" src='{% static "tasky/images/logo.svg"%}' alt="Taskbuddy logo" />
+        <form class="login-signup-v2" style="width: 100%;" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+            <fieldset class="login-signup-v2-item-first">
+                <div data-validation-message="Must be a valid email address." class="">
+                    <label for="login">
+                        <span class="visually-hidden">Email Address</span><span class="visually-hidden"
+                            id="email-error">Must be a valid email address.</span>
+                        <input type="email" placeholder="Email Address" name="login" id="email"
+                            aria-describedby="email-error" class="login-input-fields" data-testid="input-field"
+                            value="" />
+                    </label>
+                </div>
+            </fieldset>
+            <div class="login-signup-v2-item">
+                <fieldset>
+                    <div data-validation-message="Must enter a valid password." class="">
+                        <label for="password">
+                            <span class="visually-hidden">Password</span><span class="visually-hidden"
+                                id="password-error">Must enter a valid password.</span>
+                            <input type="password" placeholder="Password" name="password" id="password"
+                                aria-describedby="password-error" class="login-input-fields" data-testid="input-field"
+                                value="" />
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="forgot-password">
+                <a href="/password/reset" data-ref="forgot-password"><span>Forgot password?</span></a>
+            </div>
+            <fieldset class="fields-submit login-signup-v2-item">
+                <button
+                    class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root TRButtonPrimary submit-btn"
+                    tabindex="0" type="submit" data-testid="submit-login">
+                    <span>Log in</span>
+                </button>
+            </fieldset>
+            <div class="looking-for_social-signup">
+                <span>Signed up with Facebook or Google?</span>&nbsp;<a href="/password/reset"><span>Tap here to create
+                        a password</span></a>
+            </div>
+        </form>
+
+    </div>
+</div>
+{% endblock content %}
+

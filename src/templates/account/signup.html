@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styling %}
+<link rel="stylesheet" href='{% static "tasky/auth.css" %}'>
+{% endblock styling %}
+{% block header %}{% endblock header %}
+
+{% block content %}
+<div id="root">
+    <div class="sc-bdvvtL jOmzDU background js-background"></div>
+    <div class="panel panel--spaced login-signup-no-social-content">
+        <img class="sc-gsDKAQ bpxSsy" src='{% static "tasky/images/logo.svg"%}' alt="Taskbuddy logo" />
+
+        <form class="login-signup-v2" style="width: 100%;" method="post" action="{% url 'account_signup' %}">
+            {% csrf_token %}
+           
+           
+            <fieldset class="login-signup-v2-item">
+                <div data-validation-message="Can't be blank." class="">
+                    <label for="email">
+                        <span class="visually-hidden">Email Address</span><span class="visually-hidden"
+                            id="email-error">Can't
+                            be blank.</span>
+                        <input type="email" placeholder="Email Address" name="email" id="email"
+                            aria-describedby="email-error" class="login-input-fields" data-testid="input-field"
+                            value="" />
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="login-signup-v2-item">
+                <div data-validation-message="Can't be blank." class="">
+                    <label for="username">
+                        <span class="visually-hidden">Username</span><span class="visually-hidden"
+                            id="username-error">Can't
+                            be blank.</span>
+                        <input type="text" placeholder="Username" name="username" id="username"
+                            aria-describedby="username-error" class="login-input-fields" data-testid="input-field"
+                            value="" />
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="login-signup-v2-item">
+                <div data-validation-message="Can't be blank." class="">
+                    <label for="password">
+                        <span class="visually-hidden">Password</span><span class="visually-hidden"
+                            id="password-error">Can't be
+                            blank.</span>
+                        <input type="password" placeholder="Password" name="password1" id="password"
+                            aria-describedby="password-error" class="login-input-fields" data-testid="input-field"
+                            value="" />
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="login-signup-v2-item">
+                <div data-validation-message="Can't be blank." class="">
+                    <label for="password2">
+                        <span class="visually-hidden">Password</span><span class="visually-hidden"
+                            id="password-error">Can't be
+                            blank.</span>
+                        <input type="password" placeholder="Confirm password" name="password2" id="password2"
+                            aria-describedby="password-error" class="login-input-fields" data-testid="input-field"
+                            value="" />
+                    </label>
+                </div>
+            </fieldset>
+            
+            <div class="login-signup-v2-item-consent" style="margin-top: 14px;">
+                <span>
+                    By clicking below and creating an account, I agree to Taskbuddy's <a target="_blank"
+                        href="/terms">Terms of Service</a> and <a
+                        target="_blank" href="/privacy">Privacy Policy</a>.
+                </span>
+            </div>
+            <fieldset class="login-signup-v2-item">
+                <button
+                    class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root TRButtonPrimary submit-btn"
+                    tabindex="0" type="submit" data-ref="submit-signup">
+                    <span>Create account</span>
+                </button>
+            </fieldset>
+        </form>
+
+    </div>
+</div>
+{% endblock content %}

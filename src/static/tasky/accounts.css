@@ -1,0 +1,1659 @@
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.pagination {
+    text-align: center
+}
+
+.pagination>* {
+    padding: 0.125rem 0.4em;
+    line-height: 1.25rem;
+    display: inline-block;
+    border-radius: 2px
+}
+
+.pagination * {
+    vertical-align: middle
+}
+
+.pagination .pagination-caret {
+    background: white;
+    border: 1px solid #438e29;
+    font-size: 0.8em;
+    margin: 0 .5rem;
+    color: #438e29
+}
+
+.pagination .pagination-caret i {
+    color: #438e29
+}
+
+.pagination .pagination-caret.is-disabled {
+    cursor: not-allowed;
+    color: #b1b9c3;
+    border: 1px solid #dce0e6
+}
+
+.pagination .pagination-caret.is-disabled i {
+    color: #b1b9c3
+}
+
+.pagination .current {
+    border: none;
+    color: #242a30;
+    font-weight: 600
+}
+
+.pagination .disabled {
+    color: #545e69
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.side-nav .side-nav--item {
+    position: relative;
+    border-left: 3px solid transparent
+}
+
+.side-nav .side-nav--item a,
+.side-nav .side-nav--item i {
+    line-height: 2.5em;
+    color: #545e69;
+    display: block
+}
+
+.side-nav .side-nav--item a {
+    margin: 0 1em
+}
+
+.side-nav .side-nav--item i {
+    width: 2.75em;
+    text-align: center;
+    float: left
+}
+
+.side-nav .side-nav--item i+a {
+    margin-left: 2.75em;
+    padding-left: 0
+}
+
+.side-nav .side-nav--item .side-nav--count {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.side-nav .side-nav--item:not(.is-selected):hover {
+    border-left: 3px solid #dce0e6
+}
+
+.side-nav .side-nav--item.is-selected {
+    background: #f9fafb;
+    border-left: 3px solid #51af33
+}
+
+.side-nav .side-nav--item.is-selected a,
+.side-nav .side-nav--item.is-selected i {
+    color: #51af33
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.account--view .account--container {
+    background-color: white;
+    border: 1px solid #dce0e6;
+    border-radius: 4px
+}
+
+.account--view .nav-container select {
+    width: 100%;
+    display: none
+}
+
+.account--view .main-container {
+    padding: 1em;
+    width: 100%
+}
+
+@media all and (max-width: 500px),
+all and (min-width: 501px) and (max-width: 800px) {
+    .account--view .nav-container {
+        padding: 0.5em
+    }
+    .account--view .main-container {
+        padding: 0.5em
+    }
+    .account--view .nav-container ul {
+        display: none
+    }
+    .account--view .nav-container select {
+        display: block
+    }
+}
+
+@media all and (min-width: 801px) and (max-width: 1024px),
+all and (min-width: 1025px) {
+    .account--view .main-container {
+        border-left: 1px solid #dce0e6
+    }
+    .account--view .main-section,
+    .account--view .main-panel {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.account--view .account--title {
+    border-bottom: 1px solid #dce0e6;
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 1.428571429
+}
+
+.account--view .account--title a:not(.js-tt-trigger) {
+    float: right;
+    font-weight: normal;
+    vertical-align: middle
+}
+
+.account--view .account--title a.btn+span {
+    line-height: 1.75em
+}
+
+.account--view .account--title a:not(.btn) {
+    font-size: 1rem
+}
+
+.account--view .account--title-container a:not(.js-tt-trigger) {
+    float: right;
+    font-weight: normal;
+    vertical-align: middle
+}
+
+.account--view .account--title-container .account--title {
+    line-height: 1.75
+}
+
+.account--view [class^="avatar-container-"] {
+    display: inline-block
+}
+
+.account--view .account--list li {
+    margin-bottom: 0.5em;
+    font-size: 1.25em
+}
+
+.account--view .account--list li i+* {
+    margin-left: 0.25em
+}
+
+.account--view .account--billing-info-apple-pay {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.account--view .account--billing-info-apple-pay img {
+    height: 28px;
+    width: 48px;
+    vertical-align: middle;
+    margin-right: 0.5rem
+}
+
+.account--view .account--billing-info-apple-pay .card-type {
+    text-transform: capitalize
+}
+
+.account--view .account--billing-info-apple-pay .apple-pay-label {
+    font-weight: 400
+}
+
+.account--view .account--billing-info-apple-pay .wallet-card-details {
+    margin-top: 0.5rem;
+    margin-bottom: 0
+}
+
+.account--view .account--billing-update-warning {
+    color: #67727e;
+    margin-top: 0.5rem
+}
+
+.account--id-verification-required {
+    color: red;
+    font-weight: bold
+}
+
+.account--id-verification-required a {
+    font-weight: bolder
+}
+
+@media all and (max-width: 500px) {
+    .account--view .account--title {
+        font-size: 2rem
+    }
+}
+
+.account--view form label,
+.account--view form input[type="text"],
+.account--view form input[type="password"] {
+    display: block;
+    width: 100%
+}
+
+.account--view .account--small-form {
+    max-width: 500px
+}
+
+.account--view .mask-input {
+    -webkit-text-security: disc
+}
+
+.account--view .intended_use {
+    padding-bottom: 15px
+}
+
+.account--view .intended_use input {
+    margin-right: 5px
+}
+
+@media only screen and (max-width: 359px) {
+    .account--view .account--small-form .btn+.btn {
+        margin-top: 1em
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 360px) {
+    .account--view .flex-column-mobile {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+    .account--view .account--small-form .btn+.btn {
+        margin-left: 1em
+    }
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.account__gift-card-amount {
+    position: relative
+}
+
+.account__gift-card-amount:before {
+    content: attr(data-symbol);
+    position: absolute;
+    left: -16px;
+    top: -3px
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.account--view .account--transactions .transaction-list {
+    max-width: 500px;
+    margin: 0 auto
+}
+
+.account--view .account--transactions .transaction-receipt {
+    border-left: 1px solid transparent;
+    border-top: 1px solid #dce0e6;
+    padding: 2em 1em
+}
+
+.account--view .account--transactions .transaction-receipt:first-child {
+    border-top: none
+}
+
+.account--view .account--transactions .transaction-receipt .timestamp {
+    float: right;
+    margin-left: 0.5em
+}
+
+.account--view .account--transactions .transaction-receipt ol>li {
+    padding: 0.125em 0
+}
+
+.account--view .account--transactions .transaction-receipt ol>li:after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.account--view .account--transactions .transaction-receipt ol>li .value {
+    float: right
+}
+
+.account--view .account--transactions .transaction-receipt .transactions-indented-line {
+    padding: 0 0 0 2em
+}
+
+.account--view .account--transactions .transaction-receipt .transactions-indented-line:after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.account--view .account--transactions .transaction-receipt ol>li.total-divider {
+    margin: 1rem 0;
+    border-top: 1px solid #dce0e6
+}
+
+.account--view .account--transactions .transaction-receipt .total {
+    font-weight: 600
+}
+
+.account--view .account--transactions .transaction-receipt .cancellation {
+    font-weight: 600
+}
+
+.account--view .account--transactions .transaction-receipt .transaction-detail {
+    font-weight: 300
+}
+
+.account--view .account--transactions .is-cancelation {
+    color: #da9e07
+}
+
+.transactions-download-lightbox {
+    height: 250px
+}
+
+.transactions-download-lightbox .loading-info {
+    padding-top: 80px
+}
+
+.transactions-download-lightbox .format-container {
+    margin-top: 25px
+}
+
+.transactions-download-lightbox .format-container[data-state="hidden"] {
+    display: none
+}
+
+.transactions-download-lightbox .format-container .format-button-col button {
+    width: 150px
+}
+
+@media all and (max-width: 500px),
+all and (min-width: 501px) and (max-width: 800px) {
+    .transactions-download-lightbox {
+        height: 300px
+    }
+    .transactions-download-lightbox .format-container .format-button-col {
+        display: block;
+        width: 100%
+    }
+    .transactions-download-lightbox .format-container .format-button-col button {
+        width: 90%
+    }
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.account--view .account--bank-account #background-bank-account-example {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px
+}
+
+.account--view .account--bank-account #background-bank-account-example.en-GB {
+    background-image: url(https://assets.taskrabbit.com/v3/assets/web/en-GB/bank_account_example-775546f50d2399b4aa05fb0ca5ddf7be9ef71fd4b33d4c09772a970bed14f3d4.png)
+}
+
+.account--view .account--bank-account #background-bank-account-example.en-US {
+    background-image: url(https://assets.taskrabbit.com/v3/assets/web/en-US/bank_account_example-19b871adc5796b6d2f2b0bf3e4b3ac96f0ab0a082d8e83c1f8d34a1af9d6afbf.png)
+}
+
+.account--view .account--bank-account #background-bank-account-example.en-CA {
+    background-image: url(https://assets.taskrabbit.com/v3/assets/web/en-CA/bank_account_example-40e08395052bb4438d38dc1ae02a4cfbc2ecb83b640b191459c67eea89d99aa8.png)
+}
+
+.account--view .account--bank-account #background-bank-account-example.fr-CA {
+    background-image: url(https://assets.taskrabbit.com/v3/assets/web/fr-CA/bank_account_example-a0e6be7bfc0596ca6ed12f241e52ab8f66c343a10dd0d0f99b70dcdd057ed30c.png)
+}
+
+.account--view .account--bank-account #background-bank-account-example.en-FR {
+    background-image: url(https://assets.taskrabbit.com/v3/assets/web/en-FR/bank_account_example-a0e6be7bfc0596ca6ed12f241e52ab8f66c343a10dd0d0f99b70dcdd057ed30c.png)
+}
+
+.account--view .account--bank-account #background-bank-account-example.fr-FR {
+    background-image: url(https://assets.taskrabbit.com/v3/assets/web/fr-FR/bank_account_example-a0e6be7bfc0596ca6ed12f241e52ab8f66c343a10dd0d0f99b70dcdd057ed30c.png)
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.account--view .account--tax-id .ssn-input {
+    width: 5em;
+    display: inline-block
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.account--view .account--notifications table {
+    width: 100%
+}
+
+.account--view .account--notifications table td,
+.account--view .account--notifications table th {
+    padding: 0.5em;
+    text-align: center
+}
+
+.account--view .account--notifications table td:first-child,
+.account--view .account--notifications table th:first-child {
+    text-align: left
+}
+
+.account--view .account--notifications table th {
+    font-weight: bold;
+    border-bottom: 1px solid #dce0e6
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.search-helper {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4px;
+    font-size: 0.875rem
+}
+
+.search-helper span {
+    background-color: yellow;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out
+}
+
+.search-bar-container {
+    position: relative;
+    max-width: 510px;
+    margin: 0 auto;
+    width: 100%
+}
+
+.search-bar-container .page-loader {
+    display: none;
+    margin: -1.5em 0 0 1em;
+    top: 50%;
+    font-size: 9px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 0.5em solid #dce0e6;
+    border-right: 0.5em solid #dce0e6;
+    border-bottom: 0.5em solid #dce0e6;
+    border-left: 0.5em solid #86919d;
+    -webkit-animation: loader 1.1s infinite linear;
+    animation: loader 1.1s infinite linear
+}
+
+.search-bar-container .page-loader,
+.search-bar-container .page-loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em
+}
+
+@media all and (min-width: 801px) and (max-width: 1024px),
+all and (min-width: 1025px) {
+    .search-bar-container {
+        margin: 0.5em auto
+    }
+}
+
+.sb-results--item {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    background-color: white
+}
+
+.sb-results--item button {
+    background: none;
+    color: #438e29;
+    border: none;
+    width: 100%;
+    padding: 0.75em 1.4em;
+    margin: 2px 0
+}
+
+.sb-container--input {
+    position: relative;
+    border: none
+}
+
+.sb-input--icon,
+.sb-input--clear {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 50;
+    font-size: 1.125em;
+    background: none;
+    border: none
+}
+
+.sb-input--icon {
+    color: #51af33;
+    padding-left: 0;
+    font-size: 1rem;
+    margin-left: 1rem
+}
+
+.sb-input--clear {
+    padding: 0.25em;
+    right: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.sb-input--clear i {
+    background-color: #dce0e6;
+    display: inline-block;
+    border-radius: 50%;
+    color: white
+}
+
+@media all and (min-width: 801px) and (max-width: 1024px),
+all and (min-width: 1025px) {
+    .sb-input--clear i:hover {
+        cursor: pointer
+    }
+}
+
+.search-bar-container .sb-input {
+    padding-left: 2.5em;
+    z-index: 50;
+    border: 1px solid #b1b9c3;
+    width: 100%
+}
+
+.search-bar-container .sb-input:focus {
+    border: 1px solid #b1b9c3;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.search-bar-container[data-query="empty"] .sb-input--clear {
+    display: none
+}
+
+.search-bar-container:not([data-query="empty"]) .sb-input {
+    padding-right: 2.125em
+}
+
+.search-bar-container[data-list="hidden"] .sb-container--results {
+    display: none
+}
+
+.sb-container--results[data-list="hidden"] {
+    display: none
+}
+
+.search-bar-container:not([data-list="hidden"]) .sb-input {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px
+}
+
+.search-bar-container[data-query="fetching"] .ss-lnr-search {
+    display: none
+}
+
+.search-bar-container[data-query="fetching"] .page-loader {
+    display: block;
+    position: absolute
+}
+
+.sb-container--results {
+    background-color: white;
+    width: 100%;
+    color: #242a30;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px 1px rgba(177, 185, 195, 0.3);
+    box-shadow: 0 2px 4px 1px rgba(177, 185, 195, 0.3);
+    overflow: hidden;
+    border: 1px solid #dce0e6;
+    border-top: none;
+    z-index: 200;
+    position: relative
+}
+
+.sb-results--item {
+    background-color: white;
+    text-align: left
+}
+
+.sb-results--item[data-state="highlighted"],
+.sb-results--item:hover {
+    background-color: #f9fafb
+}
+
+.sb-results--item .media--object {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch
+}
+
+.sb-results--item .media--figure {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.sb-results--item a {
+    display: block;
+    padding: 0.75em 0.825em
+}
+
+.sb-results--item .media--content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    word-break: break-word;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.sb-results__results-item__img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-size: cover
+}
+
+.sb-results__results-item__img--handyman {
+    background-image: url("https://assets.taskrabbit.com/v3/assets/static/homepage/handyman-featured-4090604b3451e1bd76ad177fa05c07ab0deb35130d817a2ba9c9cff00f1caf4c.jpg")
+}
+
+.sb-results__results-item__img--mounting {
+    background-image: url("https://assets.taskrabbit.com/v3/assets/static/homepage/mounting-5c3b0bc187a246256494da171015c03097cf77704df5bca9a7ffeb7f04891a6c.jpg")
+}
+
+.sb-results__results-item__img--assembly {
+    background-image: url("https://assets.taskrabbit.com/v3/assets/static/homepage/assembly-e8234fb6def04f4a22960d67a9688ea7c03f10172834000d102425d69238a9c0.jpg")
+}
+
+.sb-results__results-item__img--moving {
+    background-image: url("https://assets.taskrabbit.com/v3/assets/static/homepage/moving-7b30862769c4bfaca3a428c0623473315988bf7187cab4ff4a5739708e27cfae.jpg")
+}
+
+.sb-results__promo-item {
+    border: 2px solid #e8ebef;
+    border-top: none;
+    position: relative
+}
+
+.sb-results__promo-item__title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 40px;
+    background: #e8ebef;
+    position: relative
+}
+
+.sb-results__promo-item-value {
+    color: #36b5bb;
+    font-weight: 600
+}
+
+@media all and (min-width: 801px) and (max-width: 1024px),
+all and (min-width: 1025px) {
+    .sb-results__promo-item-value {
+        position: absolute;
+        top: 0.5em;
+        right: 0
+    }
+}
+
+.sb-results--general {
+    border-top: 1px solid #dce0e6;
+    padding: 0.75em 0.825em
+}
+
+.sb-results--general,
+.sb-results--general p {
+    text-align: left;
+    font-weight: normal;
+    color: #242a30;
+    font-size: 0.875rem;
+    margin-bottom: 0
+}
+
+.sb-results--general p {
+    font-weight: 600
+}
+
+.sb-results--not-found a {
+    font-size: 1rem
+}
+
+@media all and (min-width: 801px) and (max-width: 1024px),
+all and (min-width: 1025px) {
+    .sb-container--results {
+        position: absolute
+    }
+    .sb-results--general,
+    .sb-results--item a {
+        padding: 0.75em 1.4em
+    }
+}
+
+@media all and (max-width: 500px),
+all and (min-width: 501px) and (max-width: 800px) {
+    body[data-is-searching] {
+        position: absolute
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.value-test-initial-template {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.value-test-template__pricing {
+    color: #67727e;
+    font-size: 0.875rem
+}
+
+@media all and (max-width: 500px) {
+    .value-test-template__pricing {
+        max-width: 50%;
+        margin-left: 0.5rem
+    }
+}
+
+.popular__popular_section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: #f9fafb;
+    height: 33px;
+    width: 100% !important;
+    margin-top: 16px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center
+}
+
+.popular__projects_description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    width: 50%;
+    text-align: left;
+    padding-left: 14px
+}
+
+.popular__projects_amount {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+    -webkit-box-pack: end;
+    -webkit-justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    width: 50%;
+    text-align: right;
+    padding-right: 35px
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+:export {
+    tr-green-10: #cbedc0;
+    tr-green-20: #a4df90;
+    tr-green-30: #7dd161;
+    tr-green-40: #63c841;
+    tr-green-50: #51af33;
+    tr-green-60: #438e29;
+    tr-green-70: #346f20;
+    tr-green-80: #254f17;
+    tr-green-90: #162f0e;
+    tr-green-pricing: #2f8f84;
+    tr-green-calendar: #b9dfad;
+    tr-blue-10: #e5f3f5;
+    tr-blue-20: #cce9ec;
+    tr-blue-30: #b1dee3;
+    tr-blue-40: #81ced5;
+    tr-blue-50: #36b5bb;
+    tr-blue-60: #31a7a8;
+    tr-blue-70: #2d9994;
+    tr-blue-80: #288c81;
+    tr-blue-90: #206d5f;
+    tr-blue-calendar: #259995;
+    tr-blue-banner: #0051ba;
+    tr-yellow-10: #fef9eb;
+    tr-yellow-20: #fdedc4;
+    tr-yellow-30: #fce19c;
+    tr-yellow-40: #facf61;
+    tr-yellow-50: #f9c339;
+    tr-yellow-60: #f8b612;
+    tr-yellow-70: #da9e07;
+    tr-yellow-80: #b28106;
+    tr-yellow-90: #8b6404;
+    tr-red-10: #d14200;
+    tr-grey-10: #f9fafb;
+    tr-grey-20: #e8ebef;
+    tr-grey-30: #dce0e6;
+    tr-grey-40: #b1b9c3;
+    tr-grey-50: #86919d;
+    tr-grey-60: #67727e;
+    tr-grey-70: #545e69;
+    tr-grey-80: #404852;
+    tr-grey-90: #242a30
+}
+
+.stripe__payment-methods-container {
+    margin-bottom: 1.5rem
+}
+
+.stripe__payment-method {
+    border: none;
+    color: #51af33;
+    background-color: #f9fafb;
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    position: relative;
+    outline: none;
+    cursor: pointer
+}
+
+.stripe__payment-method .stripe__payment-method--moving-tab {
+    position: absolute;
+    -webkit-transition: left ease-in 250ms;
+    transition: left ease-in 250ms;
+    display: block;
+    z-index: 9999;
+    white-space: nowrap;
+    top: 0;
+    border: none;
+    color: #545e69;
+    background-color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border-radius: 8px !important;
+    opacity: 0;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 2px 5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 2px 5px rgba(0, 0, 0, 0.16)
+}
+
+@media all and (max-width: 325px) {
+    .stripe__payment-method .stripe__payment-method--moving-tab {
+        display: none
+    }
+}
+
+.stripe__payment-method:first-child {
+    border-radius: 8px 0 0 8px
+}
+
+.stripe__payment-method:first-child .stripe__payment-method--moving-tab {
+    left: 100%
+}
+
+.stripe__payment-method:last-child {
+    border-radius: 0 8px 8px 0
+}
+
+.stripe__payment-method:last-child .stripe__payment-method--moving-tab {
+    left: -100%
+}
+
+.stripe__payment-method--selected {
+    color: #545e69;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 8px !important
+}
+
+.stripe__payment-method--selected .stripe__payment-method--moving-tab {
+    left: 0 !important;
+    opacity: 1
+}
+
+.stripe__billing-info-input {
+    width: 100%
+}
+
+.stripe--card-form,
+.stripe__iban-input {
+    font-weight: normal;
+    border: 1px solid #b1b9c3;
+    font-size: 1em;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    max-width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 0.5rem
+}
+
+.stripe__iban-mandate {
+    margin-bottom: 0.5rem
+}
+
+.stripe__payment-type-img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 0.5rem
+}

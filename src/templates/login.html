@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styling %}
+  <link rel="stylesheet" href='{% static "tasky/auth.css" %}'>
+{% endblock styling %}
+{% block header %}{% endblock header %}
+
+{% block content %}
+<div id="root">
+<div class="sc-bdvvtL jOmzDU background js-background"></div>
+<div class="panel panel--spaced login-signup-no-social-content">
+    <img class="sc-gsDKAQ bpxSsy"
+        src='{% static "tasky/images/logo.svg"%}'
+        alt="Taskbuddy logo" />
+    <div class="login-signup-v2">
+        <a
+            class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root TRButtonPrimary login-signup-v2-buttons login-btn"
+            tabindex="0" type="button" href="{% url 'account_signup' %}">
+            <span>Sign up</span>
+        </a>
+        <a 
+            class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root TRButtonSecondary login-signup-v2-buttons css-8oes0n"
+            tabindex="0" type="button" href="{% url 'account_login' %}">
+            <span>Log in</span>
+        </a>
+        <div class="login-signup-v2-disclaimer">
+            <span>By signing up you agree to our <a target="_blank" href="/terms">Terms of Use</a> and <a
+                    target="_blank" href="/privacy">Privacy Policy</a>.</span>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock content %}
