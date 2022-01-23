@@ -1,4 +1,4 @@
-#!/Users/akrah/Documents/dev/codefluent/week8/tasky/.venv/bin/python
+#!/Users/akrah/Documents/dev/codefluent/week8/tasker/.venv/bin/python
 
 # Author:
 # Contact: grubert@users.sf.net

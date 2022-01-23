@@ -17,11 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 from .views import home, login, profile
+from tasks.views import taskview, task_update, listview
 urlpatterns = [
     path('', home),
     path('login/', login),
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    path('accounts/profile', profile)
+    path('accounts/profile', profile),
+    path('tasks', taskview),
+    path('tasks/all', listview, name="task_all"),
+    path('tasks/<int:pk>', task_update, name='task_update')
+
     
 ]

@@ -1,8 +1,19 @@
 from django.shortcuts import render
-
+from .forms import PostForm
 
 def home(request):
-    return render(request=request, template_name="home.html")
+    
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        
+        if form.is_valid():
+            print("Data:", form.cleaned_data)
+            obj = form.save(commit=True)
+            
+    else:
+        form = PostForm()
+    
+    return render(request, "home.html", { "form": form})
 
 def login(request):
     return render(request, "login.html", {})

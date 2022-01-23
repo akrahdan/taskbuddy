@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styling %} 
+{% if request.user.is_authenticated %} 
+<link rel="stylesheet" href='{% static "tasky/dashboard.css" %}'>
+{% else %} 
+{% endif %} 
+{% endblock styling %}
+{% block content %}
+   <form action="/tasks" method="POST">
+     {% csrf_token %}
+     {{ form.as_p}}
+     <input type="submit" value="Submit">
+   </form>
+{% endblock content %}
