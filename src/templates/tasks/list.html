@@ -9,6 +9,7 @@
 {% block content %}
   {% for task  in tasks %}
     <li>
-        <a href="{% url 'task_update' task.id %}"> {{task.title}}</a></li>
+        <a href="{% url 'task_update' task.id %}"> {{task.title}}</a>
+    </li>
   {% endfor %}
 {% endblock content %}
