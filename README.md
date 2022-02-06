@@ -37,3 +37,61 @@
    https://myaccount.google.com/lesssecureapps?pli=1
 
 # Static Files
+
+
+1. Import django framework
+   pip install djangoframework
+
+2. Add rest framework to INSTALLED_APPS
+
+  INSTALLED_APPS = [
+     '''''
+     'rest_framework',
+     'rest_framework.authtoken'
+     '''''
+  ]
+
+3. Add REST_FRAMEWORK to settings:
+   
+   REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
+
+4. create serializers for each model:
+
+   from rest_framework import serializers
+   from .models import Task
+
+   class TaskSerializer(serializers.ModelSerializer):
+       
+       class Meta:
+          model = Task
+          fields = [ 'description', 'title']
+
+4. Create Rest api Views
+     
+     from rest_framework import APIView
+     from rest_framework.authentication import SessionAuthentication, TokenAuthentication
+     from .serializers import TaskSerializer
+     from rest_framework.permissions import IsAuthenticated
+     from rest_framework.response import Response
+     from rest_framework import status
+     
+     class TaskApiView(APIView):
+
+        authentication_classes = [SessionAuthetication, TokenAuthentication]
+        permission_classes = [IsAuthenticated]
+
+        def get(self, request, format=None):
+
+          tasks = Task.objects.all()
+          serializer = TaskSerializer(tasks, many=True)
+
+          return Response(serializer.data, status= status.HTTP_200_OK )
+         
+         
+
+
