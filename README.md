@@ -36,13 +36,14 @@
  - allow less secure apps on gmail
    https://myaccount.google.com/lesssecureapps?pli=1
 
-# Static Files
+# REST API
 
 
 1. Import django framework
    pip install djangoframework
 
 2. Add rest framework to INSTALLED_APPS
+  ```python
 
   INSTALLED_APPS = [
      '''''
@@ -50,17 +51,20 @@
      'rest_framework.authtoken'
      '''''
   ]
+  ```
 
 3. Add REST_FRAMEWORK to settings:
-   
+   ```python
    REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     )
-}
+   }
+   ```
 
 4. create serializers for each model:
+   ```python
 
    from rest_framework import serializers
    from .models import Task
@@ -70,9 +74,10 @@
        class Meta:
           model = Task
           fields = [ 'description', 'title']
+   ```
 
 4. Create Rest api Views
-     
+     ```python
      from rest_framework import APIView
      from rest_framework.authentication import SessionAuthentication, TokenAuthentication
      from .serializers import TaskSerializer
@@ -91,7 +96,8 @@
           serializer = TaskSerializer(tasks, many=True)
 
           return Response(serializer.data, status= status.HTTP_200_OK )
+      ```
          
-         
+
 
 
