@@ -66,8 +66,8 @@ SITE_ID = 1
 
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'readingfo@gmail.com' 
-EMAIL_HOST_PASSWORD = 'Some67new$'
+EMAIL_HOST_USER = 'gmalsls@gmail.com' 
+EMAIL_HOST_PASSWORD = 'Password$'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
