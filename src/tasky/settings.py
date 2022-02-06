@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'rest_framework',
+    'rest_framework.authtoken',
 
     'taskers',
     'tasks',
@@ -57,6 +59,13 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
     
    ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
 
 ACCOUNT_AUTHENTICATION_METHOD = "email"
 ACCOUNT_EMAIL_REQUIRED =True
