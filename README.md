@@ -96,7 +96,21 @@
           serializer = TaskSerializer(tasks, many=True)
 
           return Response(serializer.data, status= status.HTTP_200_OK )
+
+        def post(self, request, format=None):
+           
+           serializer = TaskSerializer(data=request.data)
+           if serializer.is_valid():
+              serializer.save(
+                 owner = request.user
+              )
+              return Response(serializer.data, status=status.HTTP_200_OK)
+           return Response(serializer.errors, status=status.HTTP_403)
+
+
       ```
+
+
          
 
 
